@@ -13,5 +13,10 @@ public class MessageListener {
     @KafkaListener(topics="msg2", groupId = "demo.1")
     public void msgListener(ConsumerRecord<String, String> record){
         System.out.println(record.topic() + ' ' + record.value());
-    } 
+    }
+    //1 комит
+    //2 комит
+    //3 комит
+    private int p =0;
+    private int z =0;
 }
