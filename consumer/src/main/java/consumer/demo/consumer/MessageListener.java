@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class MessageListener {
+    private int p =0;
 // комит на гите
     @KafkaListener(topics="msg2", groupId = "demo.1")
     public void msgListener(ConsumerRecord<String, String> record){
